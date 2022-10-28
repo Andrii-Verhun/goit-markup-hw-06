@@ -730,9 +730,10 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 }
 
-.modal button {
+.close-modal-button {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -747,3 +748,44 @@ input {
     top: 8px;
     right: 8px;
 }
+
+.modal-caption {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-label-text {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--brand-color-text);
+}
+
+.modal-personal-data {
+    display: block;
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-comment {
+    display: block;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.license-agreement
