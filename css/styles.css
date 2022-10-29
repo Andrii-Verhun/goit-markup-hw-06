@@ -835,8 +835,34 @@ input {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.license-agreement {
+.checkbox-wrapper {
+    position: relative;
     margin-left: 14px;
+}
+
+.icon-uncheck {
+    position: absolute;
+    transform: translateY(20%);
+    z-index: -1;
+}
+
+.icon-check {
+    position: absolute;
+    fill: var(--brand-color);
+    transform: translateY(20%) translateX(-119%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms var(--brand-timefn);
+}
+
+.license-agreement {
+    opacity: 0;
+    width: 16px;
+    height: 15px;
+}
+
+.license-agreement:checked + .icon-check {
+    opacity: 1;
 }
 
 .license-agreement-text {

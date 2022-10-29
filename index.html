@@ -413,8 +413,18 @@
                 </div>
                 <label class="modal-label-text" for="modal-comment">Коментар</label>
                 <textarea class="modal-comment" name="modal-comment" id="modal-comment" placeholder="Введіть текст"></textarea>
-                <input class="license-agreement" id="license-agreement" type="checkbox" name="license-agreement">
-                <label class="license-agreement-text" for="license-agreement">Погоджуюся з розсилкою та приймаю <a class="license-link" href="#">Умови договору</a></label>
+                <div class="checkbox-wrapper">
+                    <svg class="icon-uncheck" width="16" height="15">
+                        <use href="./images/icons.svg#icon-uncheck"></use>
+                    </svg>
+                    <input class="license-agreement" id="license-agreement" type="checkbox" name="license-agreement">
+                    <svg class="icon-check" width="16" height="15">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <label class="license-agreement-text" for="license-agreement">
+                    Погоджуюся з розсилкою та приймаю <a class="license-link"href="#">Умови договору</a>
+                    </label>
+                </div>
                 <button class="send-modalform-button" type="submit">Відправити</button>
             </form>
         </div>
